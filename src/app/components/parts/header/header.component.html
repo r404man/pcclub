@@ -1,0 +1,177 @@
+<header>
+  <div class="header__inner">
+    <div class="header-top col-12 pt-3 pb-3">
+      <div class="container row align-items-center">
+        <div class="header-logo col-6">PCClub.ru</div>
+        <div class="header-links col-6 d-flex justify-content-end">
+          <a
+            href=""
+            class="dropdown-toggle"
+            id="dropdownMenuButton"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+            >Руб / ₽</a
+          >
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="#">USD / $</a></li>
+            <li><a class="dropdown-item" href="#">EUR / #</a></li>
+          </ul>
+          <a href="" class="ms-4">Оплата и доставка</a>
+          <a href="" class="ms-4">О компании</a>
+        </div>
+      </div>
+    </div>
+    <div class="header-bottom pt-3 pb-3 col-12">
+      <div class="container row justify-content-between align-items-center">
+        <div
+          class="btn categories-btn align-items-center d-flex justify-content-between col-2"
+          data-bs-toggle="collapse"
+          href="#catalogCollapse"
+          role="button"
+          aria-expanded="true"
+          aria-controls="catalogCollapse"
+          (click)="openCatalog()"
+          [ngClass]="{ isOpen: isCatalogOpen }"
+        >
+          <a class="header-categories">Каталог</a>
+          <div class="catalog-icon">
+            <svg-icon
+              *ngIf="!isCatalogOpen; else catalogIsOpen"
+              src="/assets/catalog.svg"
+            ></svg-icon>
+            <ng-template #catalogIsOpen>
+              <svg-icon
+                src="/assets/cross.svg"
+                [svgStyle]="{ 'width.px': 20 }"
+              ></svg-icon>
+            </ng-template>
+          </div>
+        </div>
+        <div class="header-search col-6">
+          <input type="text" placeholder="Искать Iphone 14" class="search" />
+          <div class="btn input-sbmt">
+            <svg-icon src="/assets/search.svg"></svg-icon>
+          </div>
+        </div>
+        <div class="header-controls col-4 row justify-content-between">
+          <div
+            class="controls-link col-3 d-flex align-items-center flex-column"
+          >
+            <div class="link-icon">
+              <svg-icon src="/assets/user.svg"></svg-icon>
+            </div>
+            <div class="link-title d-flex">Профиль</div>
+          </div>
+          <div
+            class="controls-link col-3 d-flex align-items-center flex-column"
+          >
+            <div class="link-icon">
+              <svg-icon src="/assets/histogram.svg"></svg-icon>
+            </div>
+            <div class="link-title d-flex">Сравнение</div>
+          </div>
+          <div
+            class="controls-link col-3 d-flex align-items-center flex-column"
+          >
+            <div class="link-icon heart">
+              <svg-icon src="/assets/heart.svg"></svg-icon>
+            </div>
+            <div class="link-title d-flex">Избранное</div>
+          </div>
+          <div
+            class="controls-link col-3 d-flex align-items-center flex-column"
+          >
+            <div class="link-icon">
+              <svg-icon src="/assets/cart.svg"></svg-icon>
+            </div>
+            <div class="link-title d-flex">Корзина</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="collapse" id="catalogCollapse">
+  <div class="container row catalog pb-3 pt-3">
+    <div class="catalog-links col-3 d-flex flex-column">
+      <a class="catalog-link" href="">Бренды</a>
+      <a class="catalog-link" href="">Скидки и акции</a>
+      <a class="catalog-link" href="">Комплектующие для ПК</a>
+      <a class="catalog-link" href="">Компьютеры и ноутбуки</a
+      ><a class="catalog-link" href="">Бренды</a>
+      <a class="catalog-link" href="">Скидки и акции</a>
+      <a class="catalog-link" href="">Комплектующие для ПК</a>
+      <a class="catalog-link" href="">Компьютеры и ноутбуки</a
+      ><a class="catalog-link" href="">Бренды</a>
+      <a class="catalog-link" href="">Скидки и акции</a>
+      <a class="catalog-link" href="">Инструменты и электротовары</a>
+      <a class="catalog-link" href="">Компьютеры и ноутбуки</a>
+    </div>
+    <div class="catalog-picked col-9 ps-4">
+      <div class="category-title">Инструменты и электротовары</div>
+      <div class="row">
+        <div class="picked-category col-3 mb-3">
+          <a class="category-subtitle">Электроинструменты</a>
+          <div class="category-links mt-3 d-flex flex-column">
+            <a class="category-link">Дрели, шуруповерты</a>
+            <a class="category-link">Дрели, шуруповерты</a>
+            <a class="category-link">Дрели, шуруповерты</a>
+            <a class="category-link">Дрели, шуруповерты</a>
+            <a class="category-link">Дрели, шуруповерты</a>
+          </div>
+        </div>
+        <div class="picked-category col-3 mb-3">
+          <a class="category-subtitle">Электроинструменты</a>
+          <div class="category-links mt-3 d-flex flex-column">
+            <a class="category-link">Дрели, шуруповерты</a>
+            <a class="category-link">Дрели, шуруповерты</a>
+            <a class="category-link">Дрели, шуруповерты</a>
+            <a class="category-link">Дрели, шуруповерты</a>
+            <a class="category-link">Дрели, шуруповерты</a>
+          </div>
+        </div>
+        <div class="picked-category col-3 mb-3">
+          <a class="category-subtitle">Электроинструменты</a>
+          <div class="category-links mt-3 d-flex flex-column">
+            <a class="category-link">Дрели, шуруповерты</a>
+            <a class="category-link">Дрели, шуруповерты</a>
+            <a class="category-link">Дрели, шуруповерты</a>
+            <a class="category-link">Дрели, шуруповерты</a>
+            <a class="category-link">Дрели, шуруповерты</a>
+          </div>
+        </div>
+        <div class="picked-category col-3 mb-3">
+          <a class="category-subtitle">Электроинструменты</a>
+          <div class="category-links mt-3 d-flex flex-column">
+            <a class="category-link">Дрели, шуруповерты</a>
+            <a class="category-link">Дрели, шуруповерты</a>
+            <a class="category-link">Дрели, шуруповерты</a>
+            <a class="category-link">Дрели, шуруповерты</a>
+            <a class="category-link">Дрели, шуруповерты</a>
+          </div>
+        </div>
+        <div class="picked-category col-3 mb-3">
+          <a class="category-subtitle">Электроинструменты</a>
+          <div class="category-links mt-3 d-flex flex-column">
+            <a class="category-link">Дрели, шуруповерты</a>
+            <a class="category-link">Дрели, шуруповерты</a>
+            <a class="category-link">Дрели, шуруповерты</a>
+            <a class="category-link">Дрели, шуруповерты</a>
+            <a class="category-link">Дрели, шуруповерты</a>
+          </div>
+        </div>
+        <div class="picked-category col-3 mb-3">
+          <a class="category-subtitle">Электроинструменты</a>
+          <div class="category-links mt-3 d-flex flex-column">
+            <a class="category-link">Дрели, шуруповерты</a>
+            <a class="category-link">Дрели, шуруповерты</a>
+            <a class="category-link">Дрели, шуруповерты</a>
+            <a class="category-link">Дрели, шуруповерты</a>
+            <a class="category-link">Дрели, шуруповерты</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

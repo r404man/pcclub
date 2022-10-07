@@ -1,1 +1,58 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/scss/bootstrap";
+
+@font-face {
+    font-family: "Inter";
+    src: url("./assets/font/Inter-Regular.ttf") format("truetype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("./assets/font/Inter-Bold.ttf") format("truetype");
+    font-weight: 700;
+}
+
+:root {
+    --primary-color: #ff005c;
+    --secondary-color: #1a1a1a;
+    --secondary-font-color: #7d7d7d;
+    --border-color: #bcbcbc;
+    --info-color: #dedede;
+}
+
+body,
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    font-size: 16px;
+    color: var(--secondary-color);
+}
+
+.container {
+    max-width: 1250px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.info {
+    font-size: 18px;
+    color: var(--info-color);
+    font-weight: 700;
+}
+
+.link {
+    text-decoration: none;
+    cursor: pointer;
+    &:hover {
+        color: var(--primary-color) !important;
+    }
+}
