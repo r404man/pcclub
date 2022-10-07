@@ -12,8 +12,9 @@ import { CardComponent } from './components/parts/card/card.component';
 import { SliderComponent } from './components/parts/slider/slider.component';
 import { DetailsComponent } from './components/pages/details/details.component';
 import { CartComponent } from './components/pages/cart/cart.component';
+import { ConfirmationComponent } from './components/pages/confirmation/confirmation.component';
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, MainComponent, CardComponent, SliderComponent, DetailsComponent, CartComponent],
+  declarations: [AppComponent, HeaderComponent, MainComponent, CardComponent, SliderComponent, DetailsComponent, CartComponent, ConfirmationComponent],
   imports: [
     HttpClientModule,
     BrowserModule,

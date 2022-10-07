@@ -19,11 +19,11 @@
         </div>
         <div class="row-controls counter">
           <div class="control">
-            <svg-icon src="/assets/plus.svg"></svg-icon>
+            <svg-icon src="/assets/minus.svg"></svg-icon>
           </div>
           <div class="control-result">1</div>
           <div class="control">
-            <svg-icon src="/assets/minus.svg"></svg-icon>
+            <svg-icon src="/assets/plus.svg"></svg-icon>
           </div>
         </div>
         <div class="row-price">2400 ₽</div>
@@ -60,22 +60,95 @@
             <div class="contacts-title">Контактные данные</div>
             <div class="contacts-fields">
               <div class="user-fields">
-                <input type="text" placeholder="FIO" />
-                <input type="text" />
-                <input type="text" />
+                <input type="text" placeholder="ФИО*" />
+                <input type="text" placeholder="Телефон*" />
+                <input type="text" placeholder="Email (для оплаты)*" />
               </div>
             </div>
           </div>
           <div class="address">
             <div class="contacts-title">Адрес доставки</div>
-            <div class="contacts-fields">
-              <div class="user-fields">
-                <input type="text" placeholder="FIO" />
-                <input type="text" />
-                <input type="text" />
+            <div class="adress-fields">
+              <div class="address-item">
+                <input
+                  type="text"
+                  style="width: 35%"
+                  class="address-input"
+                  placeholder="Город"
+                />
+                <input
+                  type="text"
+                  style="width: 75%"
+                  class="address-input"
+                  placeholder="Адрес"
+                />
+              </div>
+              <div class="address-item">
+                <input
+                  type="text"
+                  style="width: 60%"
+                  class="address-input"
+                  placeholder="Улица"
+                />
+                <input
+                  type="text"
+                  style="width: 20%"
+                  class="address-input"
+                  placeholder="Подъезд"
+                />
+                <input
+                  style="width: 20%"
+                  type="text"
+                  class="address-input"
+                  placeholder="Квартира"
+                />
               </div>
             </div>
           </div>
+        </div>
+        <div class="paymethod">
+          <div class="contacts-title">Способ оплаты</div>
+          <div class="paymethod-cardlist">
+            <div class="paymethod-card">
+              <div class="card-text">
+                <div class="card-title">Онлайн</div>
+                <div class="card-subtitle">
+                  Безопасная оплата банковской картой онлайн
+                </div>
+              </div>
+              <label class="radio-container">
+                <input type="radio" checked="checked" name="radio" />
+                <span class="checkmark"></span>
+              </label>
+            </div>
+            <div class="paymethod-card">
+              <div class="card-text">
+                <div class="card-title">Онлайн</div>
+                <div class="card-subtitle">
+                  Безопасная оплата банковской картой онлайн
+                </div>
+              </div>
+              <label class="radio-container">
+                <input type="radio" checked="checked" name="radio" />
+                <span class="checkmark"></span>
+              </label>
+            </div>
+            <div class="paymethod-card">
+              <div class="card-text">
+                <div class="card-title">Онлайн</div>
+                <div class="card-subtitle">
+                  Безопасная оплата банковской картой онлайн
+                </div>
+              </div>
+              <label class="radio-container">
+                <input type="radio" checked="checked" name="radio" />
+                <span class="checkmark"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="form-sbmt">
+          <div class="sbmt">Оформить заказ</div>
         </div>
       </form>
     </div>
