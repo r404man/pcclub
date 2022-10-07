@@ -9,8 +9,11 @@ import { AngularSvgIconModule } from 'angular-svg-icon';
 import { HttpClientModule } from '@angular/common/http';
 import { MainComponent } from './components/pages/main/main.component';
 import { CardComponent } from './components/parts/card/card.component';
+import { SliderComponent } from './components/parts/slider/slider.component';
+import { DetailsComponent } from './components/pages/details/details.component';
+import { CartComponent } from './components/pages/cart/cart.component';
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, MainComponent, CardComponent],
+  declarations: [AppComponent, HeaderComponent, MainComponent, CardComponent, SliderComponent, DetailsComponent, CartComponent],
   imports: [
     HttpClientModule,
     BrowserModule,

@@ -80,6 +80,7 @@ input {
     z-index: 10000;
     background: rgb(255, 255, 255);
     width: 100%;
+    border-bottom: 1px solid var(--border-color);
 }
 
 .link-icon {
