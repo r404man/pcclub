@@ -13,8 +13,13 @@ import { SliderComponent } from './components/parts/slider/slider.component';
 import { DetailsComponent } from './components/pages/details/details.component';
 import { CartComponent } from './components/pages/cart/cart.component';
 import { ConfirmationComponent } from './components/pages/confirmation/confirmation.component';
+import { SearchresultComponent } from './components/pages/searchresult/searchresult.component';
+import { BreadcrumbsComponent } from './components/parts/breadcrumbs/breadcrumbs.component';
+import { ProductrowComponent } from './components/parts/productrow/productrow.component';
+import { RecentviewsComponent } from './components/parts/recentviews/recentviews.component';
+import { FilterComponent } from './components/parts/filter/filter.component';
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, MainComponent, CardComponent, SliderComponent, DetailsComponent, CartComponent, ConfirmationComponent],
+  declarations: [AppComponent, HeaderComponent, MainComponent, CardComponent, SliderComponent, DetailsComponent, CartComponent, ConfirmationComponent, SearchresultComponent, BreadcrumbsComponent, ProductrowComponent, RecentviewsComponent, FilterComponent],
   imports: [
     HttpClientModule,
     BrowserModule,

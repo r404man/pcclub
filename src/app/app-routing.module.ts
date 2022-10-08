@@ -4,6 +4,7 @@ import { CartComponent } from './components/pages/cart/cart.component';
 import { ConfirmationComponent } from './components/pages/confirmation/confirmation.component';
 import { DetailsComponent } from './components/pages/details/details.component';
 import { MainComponent } from './components/pages/main/main.component';
+import { SearchresultComponent } from './components/pages/searchresult/searchresult.component';
 
 const routes: Routes = [
   { path: '', component: MainComponent },
@@ -18,6 +19,10 @@ const routes: Routes = [
   {
     path: 'confirmation',
     component: ConfirmationComponent,
+  },
+  {
+    path: 'searchresult',
+    component: SearchresultComponent,
   },
 ];
 

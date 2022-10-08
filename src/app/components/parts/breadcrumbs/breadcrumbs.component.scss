@@ -1,0 +1,14 @@
+.breadcrumb-item a {
+    text-decoration: none;
+    color: var(--secondary-font-color);
+    &:hover {
+        color: var(--primary-color);
+    }
+}
+
+ol {
+    margin: 0;
+}
+.breadcrumbs {
+    margin: 20px 0px;
+}

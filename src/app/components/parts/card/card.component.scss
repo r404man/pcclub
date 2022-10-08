@@ -41,10 +41,6 @@
     padding: 7px;
     cursor: pointer;
     &:hover {
-        background-color: var(--primary-color);
-        svg path {
-            stroke: white;
-            fill: white;
-        }
+        border-color: var(--primary-color);
     }
 }

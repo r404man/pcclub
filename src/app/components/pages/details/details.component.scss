@@ -1,11 +1,3 @@
-.breadcrumb-item a {
-    text-decoration: none;
-    color: var(--secondary-font-color);
-    &:hover {
-        color: var(--primary-color);
-    }
-}
-
 .product-title {
     margin-bottom: 20px;
     line-height: 36px;
@@ -70,13 +62,6 @@
     }
 }
 
-ol {
-    margin: 0;
-}
-.breadcrumbs {
-    margin: 20px 0px;
-}
-
 .specs-id {
     font-size: 16px;
     color: var(--info-color);
@@ -110,6 +95,10 @@ ol {
         border-color: var(--primary-color);
         color: var(--primary-color);
     }
+}
+
+.specs-block {
+    margin-bottom: 40px;
 }
 
 .product-details {
