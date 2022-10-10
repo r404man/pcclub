@@ -82,6 +82,8 @@
               <div class="link-title d-flex">Избранное</div>
             </div>
             <div
+              *ngIf="cartAmount === 0; else cartNotNull"
+              routerLink="/cart"
               class="controls-link col-3 d-flex align-items-center flex-column"
             >
               <div class="link-icon">
@@ -89,6 +91,17 @@
               </div>
               <div class="link-title d-flex">Корзина</div>
             </div>
+            <ng-template #cartNotNull>
+              <div
+                routerLink="/cart"
+                class="controls-link col-3 d-flex align-items-center flex-column"
+              >
+                <div class="link-icon cart-icon">
+                  <span class="icon-amount">{{ cartAmount }}</span>
+                </div>
+                <div class="link-title d-flex">Корзина</div>
+              </div>
+            </ng-template>
           </div>
         </div>
       </div>

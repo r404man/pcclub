@@ -6,6 +6,7 @@ header {
             color: white;
             font-size: 24px;
             text-decoration: none;
+            user-select: none;
         }
         .header-links {
             a {
@@ -32,7 +33,7 @@ a.dropdown-item {
     border: 1px solid var(--border-color);
     a.header-categories {
         color: var(--secondary-color);
-        margin-right: 60px;
+        // margin-right: 60px;
         text-decoration: none;
         font-size: 18px;
     }
@@ -90,11 +91,13 @@ input {
 
 .link-title {
     font-size: 16px;
+    user-select: none;
 }
 
 .controls-link {
     cursor: pointer;
     .link-icon {
+        position: relative;
         svg path {
             transition: 0.2s ease-in-out;
         }
@@ -102,6 +105,8 @@ input {
     .link-title {
         transition: 0.2s ease-in-out;
     }
+
+    // Link - hover
     &:hover {
         .link-title {
             color: var(--primary-color);
@@ -160,4 +165,29 @@ input {
     &:hover {
         color: var(--primary-color);
     }
+}
+
+.link-icon.cart-icon {
+    display: flex;
+    &::before {
+        content: "";
+        z-index: 0;
+        width: 33px;
+        height: 33px;
+        top: -4px;
+        left: -1px;
+        position: absolute;
+        border-radius: 100%;
+        background-color: var(--primary-color);
+    }
+}
+
+.icon-amount {
+    position: relative;
+    text-align: center;
+    width: 30px;
+    // z-index: 1000;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
 }

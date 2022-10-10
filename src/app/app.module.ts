@@ -18,8 +18,9 @@ import { BreadcrumbsComponent } from './components/parts/breadcrumbs/breadcrumbs
 import { ProductrowComponent } from './components/parts/productrow/productrow.component';
 import { RecentviewsComponent } from './components/parts/recentviews/recentviews.component';
 import { FilterComponent } from './components/parts/filter/filter.component';
+import { CartformComponent } from './components/parts/cartform/cartform.component';
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, MainComponent, CardComponent, SliderComponent, DetailsComponent, CartComponent, ConfirmationComponent, SearchresultComponent, BreadcrumbsComponent, ProductrowComponent, RecentviewsComponent, FilterComponent],
+  declarations: [AppComponent, HeaderComponent, MainComponent, CardComponent, SliderComponent, DetailsComponent, CartComponent, ConfirmationComponent, SearchresultComponent, BreadcrumbsComponent, ProductrowComponent, RecentviewsComponent, FilterComponent, CartformComponent],
   imports: [
     HttpClientModule,
     BrowserModule,
